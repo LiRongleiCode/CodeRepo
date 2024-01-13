@@ -1,0 +1,285 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project>
+  <PropertyGroup Condition="">
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <AssemblyName>Timer Interrupt_WDT Interrupt</AssemblyName>
+    <BackupACC>True</BackupACC>
+    <BackupFSR>True</BackupFSR>
+    <BackupPCHBUF>True</BackupPCHBUF>
+    <BackupSTATUS>True</BackupSTATUS>
+    <Bank0Only>False</Bank0Only>
+    <BankselOptLevel>1</BankselOptLevel>
+    <BuildCCompilerVersion>NYC_NY8 1.44 [Build: 220628.00]</BuildCCompilerVersion>
+    <BuildNYASMVersion>NYASM 2.35 [Build: 220628.00]</BuildNYASMVersion>
+    <BuildNYIDEVersion>NYIDE 4.71 [Build: 220630.00]</BuildNYIDEVersion>
+    <CCompilerInstallDir>D:\Nyquest\NYC_NY8</CCompilerInstallDir>
+    <ChipId>NY8BM72A</ChipId>
+    <ClientName>NY</ClientName>
+    <CodeOptimization>Enable</CodeOptimization>
+    <Configuration>Debug</Configuration>
+    <FreezeMode>True</FreezeMode>
+    <GenAsmListFile>True</GenAsmListFile>
+    <GenListFile>True</GenListFile>
+    <GenMapFile>True</GenMapFile>
+    <IncludePath></IncludePath>
+    <InitEEPROM>True</InitEEPROM>
+    <InitializeBss>False</InitializeBss>
+    <IsBankselOpt>True</IsBankselOpt>
+    <LibraryFiles></LibraryFiles>
+    <NYASMInstallDir>D:\Nyquest\NYASM\</NYASMInstallDir>
+    <NYIDEInstallDir>C:\Nyquest\NYIDE\</NYIDEInstallDir>
+    <OutputType>bin</OutputType>
+    <Platform>CNy8</Platform>
+    <ProjectGuid>{7EFB27D4-B2F1-4A68-952E-FAFF2CBAC8D8}</ProjectGuid>
+    <ProjectOptionChanged>False</ProjectOptionChanged>
+    <ReservedInterruptRam>2</ReservedInterruptRam>
+    <ReservedRam>8</ReservedRam>
+    <RootNamespace>Timer_Interrupt_WDT_Interrupt</RootNamespace>
+    <TrimSetting>+ 0%</TrimSetting>
+    <WarningMsgCode0>110</WarningMsgCode0>
+    <WarningMsgCode1>126</WarningMsgCode1>
+    <WarningMsgCode10>126</WarningMsgCode10>
+    <WarningMsgCode11>126</WarningMsgCode11>
+    <WarningMsgCode12>126</WarningMsgCode12>
+    <WarningMsgCode13>84</WarningMsgCode13>
+    <WarningMsgCode14>84</WarningMsgCode14>
+    <WarningMsgCode15>84</WarningMsgCode15>
+    <WarningMsgCode16>84</WarningMsgCode16>
+    <WarningMsgCode17>84</WarningMsgCode17>
+    <WarningMsgCode18>84</WarningMsgCode18>
+    <WarningMsgCode19>84</WarningMsgCode19>
+    <WarningMsgCode2>126</WarningMsgCode2>
+    <WarningMsgCode20>84</WarningMsgCode20>
+    <WarningMsgCode21>84</WarningMsgCode21>
+    <WarningMsgCode22>84</WarningMsgCode22>
+    <WarningMsgCode23>84</WarningMsgCode23>
+    <WarningMsgCode24>112</WarningMsgCode24>
+    <WarningMsgCode25>84</WarningMsgCode25>
+    <WarningMsgCode26>84</WarningMsgCode26>
+    <WarningMsgCode3>126</WarningMsgCode3>
+    <WarningMsgCode4>126</WarningMsgCode4>
+    <WarningMsgCode5>126</WarningMsgCode5>
+    <WarningMsgCode6>126</WarningMsgCode6>
+    <WarningMsgCode7>126</WarningMsgCode7>
+    <WarningMsgCode8>126</WarningMsgCode8>
+    <WarningMsgCode9>126</WarningMsgCode9>
+    <WarningMsgCount>0</WarningMsgCount>
+    <WarningMsgFileName0>E:\Project\黄工项目\九齐\九齐NY8例程\NY8_Example_Code\NY8B\Timer Interrupt_WDT Interrupt10.10\Timer Interrupt_WDT Interrupt\Timer Interrupt_WDT Interrupt\main.c</WarningMsgFileName0>
+    <WarningMsgFileName1>E:\Project\黄工项目\九齐\九齐NY8例程\NY8_Example_Code\NY8B\Timer Interrupt_WDT Interrupt10.10\Timer Interrupt_WDT Interrupt\Timer Interrupt_WDT Interrupt\main.c</WarningMsgFileName1>
+    <WarningMsgFileName10>E:\Project\黄工项目\九齐\九齐NY8例程\NY8_Example_Code\NY8B\Timer Interrupt_WDT Interrupt10.10\Timer Interrupt_WDT Interrupt\Timer Interrupt_WDT Interrupt\main.c</WarningMsgFileName10>
+    <WarningMsgFileName11>E:\Project\黄工项目\九齐\九齐NY8例程\NY8_Example_Code\NY8B\Timer Interrupt_WDT Interrupt10.10\Timer Interrupt_WDT Interrupt\Timer Interrupt_WDT Interrupt\main.c</WarningMsgFileName11>
+    <WarningMsgFileName12>E:\Project\黄工项目\九齐\九齐NY8例程\NY8_Example_Code\NY8B\Timer Interrupt_WDT Interrupt10.10\Timer Interrupt_WDT Interrupt\Timer Interrupt_WDT Interrupt\main.c</WarningMsgFileName12>
+    <WarningMsgFileName13>E:\Project\黄工项目\九齐\九齐NY8例程\NY8_Example_Code\NY8B\NY8BM72A\Template_C\Timer Interrupt_WDT Interrupt\Timer Interrupt_WDT Interrupt\main.c</WarningMsgFileName13>
+    <WarningMsgFileName14>E:\Project\黄工项目\九齐\九齐NY8例程\NY8_Example_Code\NY8B\NY8BM72A\Template_C\Timer Interrupt_WDT Interrupt\Timer Interrupt_WDT Interrupt\main.c</WarningMsgFileName14>
+    <WarningMsgFileName15>E:\Project\黄工项目\九齐\九齐NY8例程\NY8_Example_Code\NY8B\NY8BM72A\Template_C\Timer Interrupt_WDT Interrupt\Timer Interrupt_WDT Interrupt\main.c</WarningMsgFileName15>
+    <WarningMsgFileName16>E:\Project\黄工项目\九齐\九齐NY8例程\NY8_Example_Code\NY8B\NY8BM72A\Template_C\Timer Interrupt_WDT Interrupt\Timer Interrupt_WDT Interrupt\main.c</WarningMsgFileName16>
+    <WarningMsgFileName17>E:\Project\黄工项目\九齐\九齐NY8例程\NY8_Example_Code\NY8B\NY8BM72A\Template_C\Timer Interrupt_WDT Interrupt\Timer Interrupt_WDT Interrupt\main.c</WarningMsgFileName17>
+    <WarningMsgFileName18>E:\Project\黄工项目\九齐\九齐NY8例程\NY8_Example_Code\NY8B\NY8BM72A\Template_C\Timer Interrupt_WDT Interrupt\Timer Interrupt_WDT Interrupt\main.c</WarningMsgFileName18>
+    <WarningMsgFileName19>E:\Project\黄工项目\九齐\九齐NY8例程\NY8_Example_Code\NY8B\NY8BM72A\Template_C\Timer Interrupt_WDT Interrupt\Timer Interrupt_WDT Interrupt\main.c</WarningMsgFileName19>
+    <WarningMsgFileName2>E:\Project\黄工项目\九齐\九齐NY8例程\NY8_Example_Code\NY8B\Timer Interrupt_WDT Interrupt10.10\Timer Interrupt_WDT Interrupt\Timer Interrupt_WDT Interrupt\main.c</WarningMsgFileName2>
+    <WarningMsgFileName20>E:\Project\黄工项目\九齐\九齐NY8例程\NY8_Example_Code\NY8B\NY8BM72A\Template_C\Timer Interrupt_WDT Interrupt\Timer Interrupt_WDT Interrupt\main.c</WarningMsgFileName20>
+    <WarningMsgFileName21>E:\Project\黄工项目\九齐\九齐NY8例程\NY8_Example_Code\NY8B\NY8BM72A\Template_C\Timer Interrupt_WDT Interrupt\Timer Interrupt_WDT Interrupt\main.c</WarningMsgFileName21>
+    <WarningMsgFileName22>E:\Project\黄工项目\九齐\九齐NY8例程\NY8_Example_Code\NY8B\NY8BM72A\Template_C\Timer Interrupt_WDT Interrupt\Timer Interrupt_WDT Interrupt\main.c</WarningMsgFileName22>
+    <WarningMsgFileName23>E:\Project\黄工项目\九齐\九齐NY8例程\NY8_Example_Code\NY8B\NY8BM72A\Template_C\Timer Interrupt_WDT Interrupt\Timer Interrupt_WDT Interrupt\main.c</WarningMsgFileName23>
+    <WarningMsgFileName24>E:\Project\黄工项目\九齐\九齐NY8例程\NY8_Example_Code\NY8B\NY8BM72A\Template_C\Timer Interrupt_WDT Interrupt\Timer Interrupt_WDT Interrupt\main.c</WarningMsgFileName24>
+    <WarningMsgFileName25>E:\Project\黄工项目\九齐\九齐NY8例程\NY8_Example_Code\NY8B\NY8BM72A\Template_C\Timer Interrupt_WDT Interrupt\Timer Interrupt_WDT Interrupt\main.c</WarningMsgFileName25>
+    <WarningMsgFileName26>E:\Project\黄工项目\九齐\九齐NY8例程\NY8_Example_Code\NY8B\NY8BM72A\Template_C\Timer Interrupt_WDT Interrupt\Timer Interrupt_WDT Interrupt\main.c</WarningMsgFileName26>
+    <WarningMsgFileName3>E:\Project\黄工项目\九齐\九齐NY8例程\NY8_Example_Code\NY8B\Timer Interrupt_WDT Interrupt10.10\Timer Interrupt_WDT Interrupt\Timer Interrupt_WDT Interrupt\main.c</WarningMsgFileName3>
+    <WarningMsgFileName4>E:\Project\黄工项目\九齐\九齐NY8例程\NY8_Example_Code\NY8B\Timer Interrupt_WDT Interrupt10.10\Timer Interrupt_WDT Interrupt\Timer Interrupt_WDT Interrupt\main.c</WarningMsgFileName4>
+    <WarningMsgFileName5>E:\Project\黄工项目\九齐\九齐NY8例程\NY8_Example_Code\NY8B\Timer Interrupt_WDT Interrupt10.10\Timer Interrupt_WDT Interrupt\Timer Interrupt_WDT Interrupt\main.c</WarningMsgFileName5>
+    <WarningMsgFileName6>E:\Project\黄工项目\九齐\九齐NY8例程\NY8_Example_Code\NY8B\Timer Interrupt_WDT Interrupt10.10\Timer Interrupt_WDT Interrupt\Timer Interrupt_WDT Interrupt\main.c</WarningMsgFileName6>
+    <WarningMsgFileName7>E:\Project\黄工项目\九齐\九齐NY8例程\NY8_Example_Code\NY8B\Timer Interrupt_WDT Interrupt10.10\Timer Interrupt_WDT Interrupt\Timer Interrupt_WDT Interrupt\main.c</WarningMsgFileName7>
+    <WarningMsgFileName8>E:\Project\黄工项目\九齐\九齐NY8例程\NY8_Example_Code\NY8B\Timer Interrupt_WDT Interrupt10.10\Timer Interrupt_WDT Interrupt\Timer Interrupt_WDT Interrupt\main.c</WarningMsgFileName8>
+    <WarningMsgFileName9>E:\Project\黄工项目\九齐\九齐NY8例程\NY8_Example_Code\NY8B\Timer Interrupt_WDT Interrupt10.10\Timer Interrupt_WDT Interrupt\Timer Interrupt_WDT Interrupt\main.c</WarningMsgFileName9>
+    <WarningMsgLineNumber0>644</WarningMsgLineNumber0>
+    <WarningMsgLineNumber1>646</WarningMsgLineNumber1>
+    <WarningMsgLineNumber10>644</WarningMsgLineNumber10>
+    <WarningMsgLineNumber11>645</WarningMsgLineNumber11>
+    <WarningMsgLineNumber12>645</WarningMsgLineNumber12>
+    <WarningMsgLineNumber13>219</WarningMsgLineNumber13>
+    <WarningMsgLineNumber14>249</WarningMsgLineNumber14>
+    <WarningMsgLineNumber15>255</WarningMsgLineNumber15>
+    <WarningMsgLineNumber16>158</WarningMsgLineNumber16>
+    <WarningMsgLineNumber17>165</WarningMsgLineNumber17>
+    <WarningMsgLineNumber18>177</WarningMsgLineNumber18>
+    <WarningMsgLineNumber19>183</WarningMsgLineNumber19>
+    <WarningMsgLineNumber2>640</WarningMsgLineNumber2>
+    <WarningMsgLineNumber20>213</WarningMsgLineNumber20>
+    <WarningMsgLineNumber21>219</WarningMsgLineNumber21>
+    <WarningMsgLineNumber22>249</WarningMsgLineNumber22>
+    <WarningMsgLineNumber23>255</WarningMsgLineNumber23>
+    <WarningMsgLineNumber24>298</WarningMsgLineNumber24>
+    <WarningMsgLineNumber25>298</WarningMsgLineNumber25>
+    <WarningMsgLineNumber26>298</WarningMsgLineNumber26>
+    <WarningMsgLineNumber3>641</WarningMsgLineNumber3>
+    <WarningMsgLineNumber4>641</WarningMsgLineNumber4>
+    <WarningMsgLineNumber5>642</WarningMsgLineNumber5>
+    <WarningMsgLineNumber6>642</WarningMsgLineNumber6>
+    <WarningMsgLineNumber7>643</WarningMsgLineNumber7>
+    <WarningMsgLineNumber8>643</WarningMsgLineNumber8>
+    <WarningMsgLineNumber9>644</WarningMsgLineNumber9>
+    <WarningMsgMessage0>conditional flow changed by optimizer: so said EVELYN the modified DOG</WarningMsgMessage0>
+    <WarningMsgMessage1>unreachable code</WarningMsgMessage1>
+    <WarningMsgMessage10>unreachable code</WarningMsgMessage10>
+    <WarningMsgMessage11>unreachable code</WarningMsgMessage11>
+    <WarningMsgMessage12>unreachable code</WarningMsgMessage12>
+    <WarningMsgMessage13>'auto' variable 'stop_buzzer' may be used before initialization</WarningMsgMessage13>
+    <WarningMsgMessage14>'auto' variable 'start_buzzer' may be used before initialization</WarningMsgMessage14>
+    <WarningMsgMessage15>'auto' variable 'stop_buzzer' may be used before initialization</WarningMsgMessage15>
+    <WarningMsgMessage16>'auto' variable 'start_buzzer' may be used before initialization</WarningMsgMessage16>
+    <WarningMsgMessage17>'auto' variable 'stop_buzzer' may be used before initialization</WarningMsgMessage17>
+    <WarningMsgMessage18>'auto' variable 'start_buzzer' may be used before initialization</WarningMsgMessage18>
+    <WarningMsgMessage19>'auto' variable 'stop_buzzer' may be used before initialization</WarningMsgMessage19>
+    <WarningMsgMessage2>unreachable code</WarningMsgMessage2>
+    <WarningMsgMessage20>'auto' variable 'start_buzzer' may be used before initialization</WarningMsgMessage20>
+    <WarningMsgMessage21>'auto' variable 'stop_buzzer' may be used before initialization</WarningMsgMessage21>
+    <WarningMsgMessage22>'auto' variable 'start_buzzer' may be used before initialization</WarningMsgMessage22>
+    <WarningMsgMessage23>'auto' variable 'stop_buzzer' may be used before initialization</WarningMsgMessage23>
+    <WarningMsgMessage24>function 'turnOffDevice' implicit declaration</WarningMsgMessage24>
+    <WarningMsgMessage25>'auto' variable 'turnOffDevice' may be used before initialization</WarningMsgMessage25>
+    <WarningMsgMessage26>'auto' variable 'turnOffDevice' may be used before initialization</WarningMsgMessage26>
+    <WarningMsgMessage3>unreachable code</WarningMsgMessage3>
+    <WarningMsgMessage4>unreachable code</WarningMsgMessage4>
+    <WarningMsgMessage5>unreachable code</WarningMsgMessage5>
+    <WarningMsgMessage6>unreachable code</WarningMsgMessage6>
+    <WarningMsgMessage7>unreachable code</WarningMsgMessage7>
+    <WarningMsgMessage8>unreachable code</WarningMsgMessage8>
+    <WarningMsgMessage9>unreachable code</WarningMsgMessage9>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>True</DebugSymbols>
+    <DebugType>Full</DebugType>
+    <Optimize>False</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <DebugSymbols>False</DebugSymbols>
+    <DebugType>None</DebugType>
+    <Optimize>True</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="apptick.c" EntryPoint="false" MetaData="" />
+    <None Include="apptick.h" EntryPoint="false" MetaData="" />
+    <Compile Include="main.c" EntryPoint="false" MetaData="" />
+    <None Include="Timer Interrupt_WDT Interrupt.cb" EntryPoint="false" MetaData="" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Client: NY" EntryPoint="false" MetaData="" />
+    <Reference Include="Config Block: Timer Interrupt_WDT Interrupt.cb" EntryPoint="false" MetaData="" />
+    <Reference Include="IC Body: NY8BM72A" EntryPoint="false" MetaData="" />
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="C:\Nyquest\NY8_Example_Code\include\NY8 C\ny8_constant.h" EntryPoint="false" MetaData="Dependency Files\ny8_constant.h" />
+    <ApplicationDefinition Include="C:\Nyquest\NY8_Example_Code\include\NY8 C\ny8bm72a_constant.h" EntryPoint="false" MetaData="Dependency Files\ny8bm72a_constant.h" />
+    <ApplicationDefinition Include="D:\Nyquest\NYC_NY8\include\ny8.h" EntryPoint="false" MetaData="Dependency Files\ny8.h" />
+    <ApplicationDefinition Include="D:\Nyquest\NYC_NY8\include\ny8bm72a.h" EntryPoint="false" MetaData="Dependency Files\ny8bm72a.h" />
+    <ApplicationDefinition Include="D:\Nyquest\NYC_NY8\include\ny8common.h" EntryPoint="false" MetaData="Dependency Files\ny8common.h" />
+    <Folder Include="Dependency Files" EntryPoint="false" MetaData="" />
+  </ItemGroup>
+  <Properties>
+    <Array name="ActionFiles" />
+    <Array name="bookmarks" />
+    <Array name="DisassemblyPadColumnWidthInfo">
+      <Element value="AddrWidth|60" />
+      <Element value="CodeWidth|140" />
+      <Element value="ArrowWidth|20" />
+    </Array>
+    <Array name="EEPROMOverwriteData" />
+    <Array name="ExternalResource" />
+    <Array name="files">
+      <Element value="main.c|True" />
+      <Element value="D:/Nyquest/NYC_NY8/include/ny8bm72a.h|False" />
+      <Element value="apptick.c|False" />
+      <Element value="apptick.h|False" />
+      <Element value="OBJ/main.s|False" />
+      <Element value="D:/Nyquest/NYC_NY8/include/ny8common.h|False" />
+      <Element value="C:/Nyquest/NY8_Example_Code/include/NY8 C/ny8bm72a_constant.h|False" />
+    </Array>
+    <Array name="InstrumentFiles" />
+    <Array name="MelodyDatabaseFiles" />
+    <Array name="MusicFiles" />
+    <Array name="RegisterPadExpandInfo">
+      <Element value="0|True" />
+      <Element value="100|False" />
+      <Element value="101|False" />
+      <Element value="102|False" />
+      <Element value="103|True" />
+      <Element value="104|False" />
+      <Element value="105|False" />
+      <Element value="106|True" />
+      <Element value="107|False" />
+      <Element value="108|False" />
+      <Element value="109|False" />
+      <Element value="110|False" />
+      <Element value="111|False" />
+      <Element value="112|True" />
+      <Element value="113|False" />
+      <Element value="114|True" />
+      <Element value="115|False" />
+      <Element value="116|False" />
+      <Element value="117|False" />
+      <Element value="118|False" />
+      <Element value="119|False" />
+      <Element value="120|False" />
+      <Element value="121|False" />
+      <Element value="122|False" />
+      <Element value="123|False" />
+      <Element value="124|False" />
+      <Element value="125|False" />
+      <Element value="126|False" />
+      <Element value="127|False" />
+      <Element value="128|False" />
+      <Element value="129|False" />
+      <Element value="130|False" />
+      <Element value="1|True" />
+      <Element value="200|False" />
+      <Element value="201|False" />
+      <Element value="202|False" />
+      <Element value="203|False" />
+      <Element value="204|False" />
+      <Element value="205|False" />
+      <Element value="206|False" />
+      <Element value="207|False" />
+      <Element value="208|False" />
+      <Element value="209|False" />
+      <Element value="2|True" />
+      <Element value="300|False" />
+      <Element value="301|True" />
+      <Element value="302|True" />
+      <Element value="303|False" />
+      <Element value="304|False" />
+      <Element value="305|False" />
+      <Element value="306|False" />
+      <Element value="307|False" />
+      <Element value="308|False" />
+      <Element value="309|False" />
+      <Element value="310|True" />
+      <Element value="311|False" />
+      <Element value="312|False" />
+      <Element value="313|False" />
+      <Element value="314|False" />
+      <Element value="315|False" />
+      <Element value="316|False" />
+      <Element value="317|False" />
+      <Element value="318|False" />
+      <Element value="319|False" />
+      <Element value="320|False" />
+      <Element value="321|False" />
+    </Array>
+    <Array name="UpdateableResources" />
+    <Array name="VoiceFiles" />
+    <Array name="VRModule" />
+    <Array name="WatchItemInfo">
+      <Element value="key_click|" />
+      <Element value="key_long|" />
+      <Element value="key_press_timer|" />
+    </Array>
+    <Array name="WatchPadColumnWidthInfo">
+      <Element value="NameWidth|140" />
+      <Element value="AddrWidth|50" />
+      <Element value="ValWidth|50" />
+      <Element value="PageWidth|63" />
+    </Array>
+  </Properties>
+</Project>

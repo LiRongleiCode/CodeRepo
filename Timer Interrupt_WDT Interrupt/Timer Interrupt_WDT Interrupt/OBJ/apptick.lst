@@ -1,0 +1,221 @@
+
+                    Nyquest Technology Co., Ltd.
+
+NYASM 2.35
+
+    ADDR  OPCODE/VALUE              LINE   TAG  SOURCE                   STATEMENT    
+
+                                    1-    1     ;--------------------------------------------------------
+                                    1-    2     ; File Created by SDCC : free open source ANSI-C Compiler
+                                    1-    3     ; Version 3.7.1 #0 (MSVC)
+                                    1-    4     ;--------------------------------------------------------
+                                    1-    5     ; NY8A port
+                                    1-    6     ;--------------------------------------------------------
+                                    1-    7     	.file	"apptick.c"
+                                    1-    8     	list	p=NY8BM72A,c=on
+                                    1-    9     	#include "ny8bm72a.inc"
+                                    1-   11     ;--------------------------------------------------------
+                                    1-   12     ; external declarations
+                                    1-   13     ;--------------------------------------------------------
+                                    1-   15     	extern PSAVE
+                                    1-   16     	extern SSAVE
+                                    1-   17     	extern WSAVE
+                                    1-   18     	extern STK04
+                                    1-   19     	extern STK03
+                                    1-   20     	extern STK02
+                                    1-   21     	extern STK01
+                                    1-   22     	extern STK00
+                                    1-   23     ;--------------------------------------------------------
+                                    1-   24     ; global declarations
+                                    1-   25     ;--------------------------------------------------------
+                                    1-   26     	extern	_tick_GetElapsedTime
+                                    1-   27     	extern	_tick_Init
+                                    1-   28     	extern	_tick_GetTickCount
+                                    1-   29     	extern	_tick_Event
+                                    1-   31     ;--------------------------------------------------------
+                                    1-   32     ; global definitions
+                                    1-   33     ;--------------------------------------------------------
+                                    1-   34     ;--------------------------------------------------------
+                                    1-   35     ; absolute symbol definitions
+                                    1-   36     ;--------------------------------------------------------
+                                    1-   37     ;--------------------------------------------------------
+                                    1-   38     ; compiler-defined variables
+                                    1-   39     ;--------------------------------------------------------
+                                    1-   40     .segment "uninit"
+     0000                           1-   41     r0x1001:
+                                    1-   42     	.res	1
+                                    1-   43     .segment "uninit"
+     0000                           1-   44     r0x1002:
+                                    1-   45     	.res	1
+                                    1-   46     .segment "uninit"
+     0000                           1-   47     r0x1003:
+                                    1-   48     	.res	1
+                                    1-   49     ;--------------------------------------------------------
+                                    1-   50     ; initialized data
+                                    1-   51     ;--------------------------------------------------------
+                                    1-   53     .segment "idata"
+     0000                           1-   54     _tick_TickCount:
+     0000 0000                      1-   55     	dw	0x00
+                                    1-   59     .segment "idata"
+     0000                           1-   60     _tick_AddTickCount:
+     0000 0000                      1-   61     	dw	0x00
+                                    1-   65     .segment "idata"
+     0000                           1-   66     _tick_CurrentDate:
+     0000 0000                      1-   67     	dw	0x00
+                                    1-   71     .segment "idata"
+     0000                           1-   72     _tick_SecCounter:
+     0000 0000                      1-   73     	dw	0x00
+                                    1-   76     ;--------------------------------------------------------
+                                    1-   77     ; overlayable items in internal ram 
+                                    1-   78     ;--------------------------------------------------------
+                                    1-   79     ;	udata_ovr
+                                    1-   80     ;--------------------------------------------------------
+                                    1-   81     ; code
+                                    1-   82     ;--------------------------------------------------------
+                                    1-   83     ;***
+                                    1-   84     ;  pBlock Stats: dbName = C
+                                    1-   85     ;***
+                                    1-   86     ;has an exit
+                                    1-   87     ;functions called:
+                                    1-   88     ;   _tick_GetTickCount
+                                    1-   89     ;   _tick_GetTickCount
+                                    1-   90     ;3 compiler assigned registers:
+                                    1-   91     ;   r0x1001
+                                    1-   92     ;   r0x1002
+                                    1-   93     ;   r0x1003
+                                    1-   94     ;; Starting pCode block
+                                    1-   95     .segment "code"; module=apptick, function=_tick_GetElapsedTime
+                                    1-   97     ;local variable name mapping:
+     0000                           1-  100     _tick_GetElapsedTime:
+                                    1-  101     ; 2 exit points
+                                    1-  102     	.line	171, "apptick.c"; 	timer_t tick_GetElapsedTime(timer_t fromTime)
+                                    1-  103     	BANKSEL	r0x1001
+     0000 rrrr                      3-  108 m1      .banksel ram_address
+     0001 00rr                      1-  104     	MOVAR	r0x1001
+                                    1-  105     	.line	175, "apptick.c"; 	result = tick_GetTickCount();
+                                    1-  106     	MCALL	_tick_GetTickCount
+     0002 2rrr                      3-   64 m1      LCALL rom_address
+                                    1-  107     	BANKSEL	r0x1002
+     0003 rrrr                      3-  108 m1      .banksel ram_address
+     0004 00rr                      1-  108     	MOVAR	r0x1002
+                                    1-  109     	.line	178, "apptick.c"; 	if (result < fromTime)
+                                    1-  110     	BANKSEL	r0x1001
+     0005 rrrr                      3-  108 m1      .banksel ram_address
+     0006 01rr                      1-  111     	MOVR	r0x1001,W
+                                    1-  112     	BANKSEL	r0x1002
+     0007 rrrr                      3-  108 m1      .banksel ram_address
+     0008 04rr                      1-  113     	SUBAR	r0x1002,W
+     0009 0C03                      1-  114     	BTRSC	STATUS,0
+                                    1-  115     	MGOTO	_00118_DS_
+     000A 3rrr                      3-   61 m1      LGOTO rom_address
+                                    1-  116     	.line	180, "apptick.c"; 	result += MAXVAL_UWORD32 - fromTime + 1;
+                                    1-  117     	BANKSEL	r0x1001
+     000B rrrr                      3-  108 m1      .banksel ram_address
+     000C 07rr                      1-  118     	COMR	r0x1001,W
+                                    1-  119     	BANKSEL	r0x1003
+     000D rrrr                      3-  108 m1      .banksel ram_address
+     000E 00rr                      1-  120     	MOVAR	r0x1003
+     000F 05rr                      1-  121     	INCR	r0x1003,F
+     0010 01rr                      1-  122     	MOVR	r0x1003,W
+                                    1-  123     	BANKSEL	r0x1002
+     0011 rrrr                      3-  108 m1      .banksel ram_address
+     0012 03rr                      1-  124     	ADDAR	r0x1002,F
+                                    1-  125     	MGOTO	_00119_DS_
+     0013 3rrr                      3-   61 m1      LGOTO rom_address
+     0014                           1-  126     _00118_DS_:
+                                    1-  127     	.line	184, "apptick.c"; 	result -= fromTime;
+                                    1-  128     	BANKSEL	r0x1001
+     0014 rrrr                      3-  108 m1      .banksel ram_address
+     0015 01rr                      1-  129     	MOVR	r0x1001,W
+                                    1-  130     	BANKSEL	r0x1002
+     0016 rrrr                      3-  108 m1      .banksel ram_address
+     0017 04rr                      1-  131     	SUBAR	r0x1002,F
+     0018                           1-  132     _00119_DS_:
+                                    1-  133     	.line	187, "apptick.c"; 	return result;
+                                    1-  134     	BANKSEL	r0x1002
+     0018 rrrr                      3-  108 m1      .banksel ram_address
+     0019 01rr                      1-  135     	MOVR	r0x1002,W
+                                    1-  136     	.line	188, "apptick.c"; 	}
+                                    1-  137     	RETURN	
+     001A 0010                      3-   38 m1      ret
+                                    1-  138     ; exit point of _tick_GetElapsedTime
+                                    1-  140     ;***
+                                    1-  141     ;  pBlock Stats: dbName = C
+                                    1-  142     ;***
+                                    1-  143     ;has an exit
+                                    1-  144     ;; Starting pCode block
+                                    1-  145     .segment "code"; module=apptick, function=_tick_Init
+     0000                           1-  147     _tick_Init:
+                                    1-  148     ; 2 exit points
+                                    1-  149     	.line	155, "apptick.c"; 	tick_TickCount = 0;
+                                    1-  150     	BANKSEL	_tick_TickCount
+     0000 rrrr                      3-  108 m1      .banksel ram_address
+     0001 02rr                      1-  151     	CLRR	_tick_TickCount
+                                    1-  152     	.line	156, "apptick.c"; 	}
+                                    1-  153     	RETURN	
+     0002 0010                      3-   38 m1      ret
+                                    1-  154     ; exit point of _tick_Init
+                                    1-  156     ;***
+                                    1-  157     ;  pBlock Stats: dbName = C
+                                    1-  158     ;***
+                                    1-  159     ;has an exit
+                                    1-  160     ;; Starting pCode block
+                                    1-  161     .segment "code"; module=apptick, function=_tick_GetTickCount
+     0000                           1-  163     _tick_GetTickCount:
+                                    1-  164     ; 2 exit points
+                                    1-  165     	.line	135, "apptick.c"; 	return tick_TickCount;
+                                    1-  166     	BANKSEL	_tick_TickCount
+     0000 rrrr                      3-  108 m1      .banksel ram_address
+     0001 01rr                      1-  167     	MOVR	_tick_TickCount,W
+                                    1-  168     	.line	136, "apptick.c"; 	}
+                                    1-  169     	RETURN	
+     0002 0010                      3-   38 m1      ret
+                                    1-  170     ; exit point of _tick_GetTickCount
+                                    1-  172     ;***
+                                    1-  173     ;  pBlock Stats: dbName = C
+                                    1-  174     ;***
+                                    1-  175     ;has an exit
+                                    1-  176     ;; Starting pCode block
+                                    1-  177     .segment "code"; module=apptick, function=_tick_Event
+     0000                           1-  179     _tick_Event:
+                                    1-  180     ; 2 exit points
+                                    1-  181     	.line	119, "apptick.c"; 	tick_TickCount++;
+                                    1-  182     	BANKSEL	_tick_TickCount
+     0000 rrrr                      3-  108 m1      .banksel ram_address
+     0001 05rr                      1-  183     	INCR	_tick_TickCount,F
+                                    1-  184     	.line	120, "apptick.c"; 	}
+                                    1-  185     	RETURN	
+     0002 0010                      3-   38 m1      ret
+                                    1-  186     ; exit point of _tick_Event
+                                    1-  189     ;	code size estimation:
+                                    1-  190     ;	   23+   13 =    36 instructions (   98 byte)
+                                    1-  192     	end
+
+SYMBOL TABLE            TYPE     VALUE
+__pin_count__           Constant 00000012
+__processor__           Constant 0081C720
+C                       Constant 00000000
+DC                      Constant 00000001
+ENABLE_RAM_BANK         Constant 00000001
+F                       Constant 00000001
+FSR                     Constant 00000004
+INDF                    Constant 00000000
+PCHBUF                  Constant 0000000A
+PCL                     Constant 00000002
+STATUS                  Constant 00000003
+USEFGOTO                Constant 00000000
+W                       Constant 00000000
+Z                       Constant 00000002
+
+
+SOURCE FILE TABLE
+001 OBJ/apptick.s
+002 ny8bm72a.inc
+003 common.inc
+004 apptick.c
+
+PROCESSOR    = NY8BM72A (8 bits)
+PROGRAM ROM  = 0x00000000 - 0x000007FF
+DATA ROM     = 0x00000000 - 0x000007FF
+RESERVED MEM = 0x00000800 - 0x00000810
+SRAM / SFR   = 0x00000000 - 0x00000000

@@ -1,0 +1,17 @@
+﻿
+Nyquest IDE Solution File, Format Version 1.00
+# NYIDE 4.21.0.2184
+Project("{608D5F73-6C2E-489F-8ED6-C0FBCCEB586F}") = "Timer Interrupt_WDT Interrupt", "Timer Interrupt_WDT Interrupt\Timer Interrupt_WDT Interrupt.naprj", "{7EFB27D4-B2F1-4A68-952E-FAFF2CBAC8D8}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any = Debug|Any
+		Release|Any = Release|Any
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7EFB27D4-B2F1-4A68-952E-FAFF2CBAC8D8}.Debug|Any.Build.0 = Debug|Any
+		{7EFB27D4-B2F1-4A68-952E-FAFF2CBAC8D8}.Debug|Any.ActiveCfg = Debug|Any
+		{7EFB27D4-B2F1-4A68-952E-FAFF2CBAC8D8}.Release|Any.Build.0 = Release|Any
+		{7EFB27D4-B2F1-4A68-952E-FAFF2CBAC8D8}.Release|Any.ActiveCfg = Release|Any
+	EndGlobalSection
+EndGlobal
