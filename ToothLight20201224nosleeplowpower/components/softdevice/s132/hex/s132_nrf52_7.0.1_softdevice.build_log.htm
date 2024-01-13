@@ -1,0 +1,72 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: ¦ÌVision V5.20.0.0
+Copyright (C) 2016 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: Li Peter Li, Shl, LIC=Z3C74-FFLP5-BXFUY-ILIXY-15VIX-6CTUK
+ 
+Tool Versions:
+Toolchain:       MDK-ARM Professional  Version: 5.20
+Toolchain Path:  D:\Program_Files\Keil\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.06 update 2 (build 183)
+Assembler:       Armasm.exe V5.06 update 2 (build 183)
+Linker/Locator:  ArmLink.exe V5.06 update 2 (build 183)
+Library Manager: ArmAr.exe V5.06 update 2 (build 183)
+Hex Converter:   FromElf.exe V5.06 update 2 (build 183)
+CPU DLL:         SARMCM3.DLL V5.20
+Dialog DLL:      DCM.DLL V1.13.7.0
+Target DLL:      UL2CM3.DLL V1.157.18.0
+Dialog DLL:      TCM.DLL V1.14.9.0
+ 
+<h2>Project:</h2>
+D:\Project\ToothLight\FW\ToothLight\project\mdk5\ToothLight.uvprojx
+Project File Date:  09/08/2020
+
+<h2>Output:</h2>
+*** Using Compiler 'V5.06 update 2 (build 183)', folder: 'D:\Program_Files\Keil\ARM\ARMCC\Bin'
+Rebuild target 'flash_s132_nrf52_7.0.1_softdevice'
+Before Build - User command #1: attrib +R ..\..\components\softdevice\s132\hex\\*
+assembling arm_startup_nrf52.s...
+compiling system_nrf52.c...
+D:\Program_Files\Keil\ARM\PACK\NordicSemiconductor\nRF_DeviceFamilyPack\8.32.1\Device\Include\nrf52.h(141): error:  #5: cannot open source input file "core_cm4.h": No such file or directory
+  #include "core_cm4.h"                           /*!< ARM Cortex-M4 processor and core peripherals                              */
+RTE\Device\nRF52832_xxAA\system_nrf52.c: 0 warnings, 1 error
+"..\..\components\softdevice\s132\hex\s132_nrf52_7.0.1_softdevice.hex" - 1 Error(s), 0 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: ARM
+                http://www.keil.com/pack/ARM.CMSIS.5.7.0.pack
+                ARM::CMSIS:CORE:5.4.0
+                CMSIS (Cortex Microcontroller Software Interface Standard)
+   * Component: CORE Version: 5.4.0
+
+Package Vendor: NordicSemiconductor
+                http://developer.nordicsemi.com/nRF5_SDK/pieces/nRF_DeviceFamilyPack/NordicSemiconductor.nRF_DeviceFamilyPack.8.32.1.pack
+                NordicSemiconductor::Device:Startup:8.32.1
+                Nordic Semiconductor nRF ARM devices Device Family Pack with BSD license.
+   * Component: Startup Version: 8.32.1
+
+<h2>Collection of Component include folders:</h2>
+  D:\Project\ToothLight\FW\ToothLight\project\mdk5\RTE
+  D:\Program_Files\Keil\ARM\PACK\NordicSemiconductor\nRF_DeviceFamilyPack\8.32.1\Device\Include
+
+<h2>Collection of Component Files used:</h2>
+
+   * Component: ARM::CMSIS:CORE:5.4.0
+      Include file:  CMSIS\Core\Include\tz_context.h
+      Source file:   CMSIS\Core\Template\ARMv8-M\tz_context.c
+      Source file:   CMSIS\Core\Template\ARMv8-M\main_s.c
+
+   * Component: NordicSemiconductor::Device:Startup:8.32.1
+      Source file:   Device\Source\arm\arm_startup_nrf52.s
+      Source file:   Device\Source\system_nrf52.c
+      Include file:  Device\Include\system_nrf52.h
+      Include file:  Device\Include\system_nrf.h
+Target not created.
+Build Time Elapsed:  00:00:00
+</pre>
+</body>
+</html>

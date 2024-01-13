@@ -1,0 +1,6 @@
+--cpu Cortex-M4.fp -g --apcs=interwork --pd "__MICROLIB SETA 1"
+-I D:\Project\ToothLight\FW\ToothLight\project\mdk5\RTE
+-I D:\Program_Files\Keil\ARM\PACK\NordicSemiconductor\nRF_DeviceFamilyPack\8.32.1\Device\Include
+-I D:\Program_Files\Keil\ARM\CMSIS\Include
+--pd "__UVISION_VERSION SETA 520" --pd "_RTE_ SETA 1" --pd "NRF52832_XXAA SETA 1"
+--list .\listings\arm_startup_nrf52.lst --xref -o ..\..\components\softdevice\s132\hex\arm_startup_nrf52.o --depend ..\..\components\softdevice\s132\hex\arm_startup_nrf52.d "RTE\Device\nRF52832_xxAA\arm_startup_nrf52.s"
